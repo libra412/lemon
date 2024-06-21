@@ -1,0 +1,2 @@
+[SAAS]2024-06-21 22:01:14.509	[31merror[0m	/Users/xiaoxin/go/src/github.com/libra412/lemon/core/server.go:41	net.Listen error: listen tcp :8888: bind: address already in use
+[SAAS]2024-06-21 22:13:55.310	[31merror[0m	/Users/xiaoxin/go/src/github.com/libra412/lemon/core/server.go:41	accept tcp [::]:8888: use of closed network connection
