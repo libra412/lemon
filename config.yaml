@@ -25,7 +25,7 @@ autocode:
     server-api: /api/v1/%s
     server-plug: /plugin/%s
     server-initialize: /initialize
-    root: /Users/xiaoxin/go/src/gin-vue-admin
+    root: /src
     web-table: /view
     web: /web/src
     server-service: /service/%s
@@ -39,7 +39,7 @@ aws-s3:
     endpoint: ""
     secret-id: your-secret-id
     secret-key: your-secret-key
-    base-url: https://gin.vue.admin
+    base-url: 
     path-prefix: lemon
     s3-force-path-style: false
     disable-ssl: false
@@ -138,7 +138,7 @@ mysql:
     prefix: ""
     port: "3306"
     config: charset=utf8mb4&parseTime=True&loc=Local
-    db-name: saas
+    db-name: db
     username: root
     password: "1234"
     path: 127.0.0.1
@@ -216,7 +216,7 @@ tencent-cos:
     path-prefix: lemon
 zap:
     level: info
-    prefix: '[SAAS]'
+    prefix: '[LEMON]'
     format: console
     director: log
     encode-level: LowercaseColorLevelEncoder

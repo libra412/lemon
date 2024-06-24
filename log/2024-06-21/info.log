@@ -1,4 +1,0 @@
-[SAAS]2024-06-21 22:01:14.509	[34minfo[0m	/Users/xiaoxin/go/src/github.com/libra412/lemon/initialize/router.go:102	router register success
-[SAAS]2024-06-21 22:01:14.509	[34minfo[0m	/Users/xiaoxin/go/src/github.com/libra412/lemon/core/server.go:39	server run success on 	{"address": ":8888"}
-[SAAS]2024-06-21 22:13:50.972	[34minfo[0m	/Users/xiaoxin/go/src/github.com/libra412/lemon/initialize/router.go:102	router register success
-[SAAS]2024-06-21 22:13:50.973	[34minfo[0m	/Users/xiaoxin/go/src/github.com/libra412/lemon/core/server.go:39	server run success on 	{"address": ":8888"}
