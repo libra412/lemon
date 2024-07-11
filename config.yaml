@@ -11,13 +11,22 @@ system:
     use-redis: false
     use-mongo: false
 
-aliyun-oss:
-    endpoint: yourEndpoint
-    access-key-id: yourAccessKeyId
-    access-key-secret: yourAccessKeySecret
-    bucket-name: yourBucketName
-    bucket-url: yourBucketUrl
-    base-path: yourBasePath
+mysql:
+    prefix: ""
+    port: "3306"
+    config: charset=utf8mb4&parseTime=True&loc=Local
+    db-name: db
+    username: root
+    password: "1234"
+    path: 127.0.0.1
+    engine: ""
+    log-mode: info
+    max-idle-conns: 10
+    max-open-conns: 100
+    singular: false
+    log-zap: false
+
+
 autocode:
     server-model: /model/%s
     server-router: /router/%s
@@ -33,6 +42,13 @@ autocode:
     web-api: /api
     web-form: /view
     transfer-restart: true
+aliyun-oss:
+    endpoint: yourEndpoint
+    access-key-id: yourAccessKeyId
+    access-key-secret: yourAccessKeySecret
+    bucket-name: yourBucketName
+    bucket-url: yourBucketUrl
+    base-path: yourBasePath
 aws-s3:
     bucket: xxxxx-10005608
     region: ap-shanghai
@@ -134,20 +150,7 @@ mssql:
     max-open-conns: 100
     singular: false
     log-zap: false
-mysql:
-    prefix: ""
-    port: "3306"
-    config: charset=utf8mb4&parseTime=True&loc=Local
-    db-name: db
-    username: root
-    password: "1234"
-    path: 127.0.0.1
-    engine: ""
-    log-mode: info
-    max-idle-conns: 10
-    max-open-conns: 100
-    singular: false
-    log-zap: false
+
 oracle:
     prefix: ""
     port: ""
