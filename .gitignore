@@ -35,3 +35,5 @@ web/pnpm-lock.yaml
 *.zip
 *.tar.gz
 
+go.sum
+
