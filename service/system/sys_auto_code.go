@@ -14,7 +14,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/mholt/archiver/v4"
+	"github.com/mholt/archives"
 
 	ast2 "lemon/utils/ast"
 
@@ -837,7 +837,7 @@ func (autoCodeService *AutoCodeService) PubPlug(plugName string) (zipPath string
 
 	fileName := plugName + ".zip"
 	// 创建一个新的zip文件
-	files, err := archiver.FilesFromDisk(nil, map[string]string{
+	files, err := archives.FilesFromDisk(context.Background(), nil, map[string]string{
 		webPath:    plugName + "/web/plugin/" + plugName,
 		serverPath: plugName + "/server/plugin/" + plugName,
 	})
@@ -851,8 +851,8 @@ func (autoCodeService *AutoCodeService) PubPlug(plugName string) (zipPath string
 
 	// we can use the CompressedArchive type to gzip a tarball
 	// (compression is not required; you could use Tar directly)
-	format := archiver.CompressedArchive{
-		Archival: archiver.Zip{},
+	format := archives.CompressedArchive{
+		Archival: archives.Zip{},
 	}
 
 	// create the archive

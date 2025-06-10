@@ -1,7 +1,7 @@
 package initialize
 
 import (
-	"lemon/gkit/cache/local_cache"
+	"github.com/libra412/orange/cache/local_cache"
 
 	"lemon/global"
 	"lemon/utils"
