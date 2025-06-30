@@ -1,7 +1,6 @@
 package router
 
 import (
-	"lemon/middleware"
 	"lemon/plugin/email/api"
 
 	"github.com/gin-gonic/gin"
@@ -10,7 +9,7 @@ import (
 type EmailRouter struct{}
 
 func (s *EmailRouter) InitEmailRouter(Router *gin.RouterGroup) {
-	emailRouter := Router.Use(middleware.OperationRecord())
+	emailRouter := Router //.Use(middleware.OperationRecord())
 	EmailApi := api.ApiGroupApp.EmailApi.EmailTest
 	SendEmail := api.ApiGroupApp.EmailApi.SendEmail
 	{

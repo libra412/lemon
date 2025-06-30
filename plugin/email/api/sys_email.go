@@ -1,8 +1,8 @@
 package api
 
 import (
+	"lemon/api/common/response"
 	"lemon/global"
-	"lemon/model/common/response"
 	email_response "lemon/plugin/email/model/response"
 	"lemon/plugin/email/service"
 

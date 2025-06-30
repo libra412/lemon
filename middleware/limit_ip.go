@@ -8,8 +8,8 @@ import (
 
 	"go.uber.org/zap"
 
+	"lemon/api/common/response"
 	"lemon/global"
-	"lemon/model/common/response"
 
 	"github.com/gin-gonic/gin"
 )

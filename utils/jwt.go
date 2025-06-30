@@ -6,8 +6,8 @@ import (
 
 	jwt "github.com/golang-jwt/jwt/v4"
 
+	"lemon/api/common/request"
 	"lemon/global"
-	"lemon/model/system/request"
 )
 
 type JWT struct {

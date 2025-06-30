@@ -1,8 +1,8 @@
 package utils
 
 import (
+	systemReq "lemon/api/common/request"
 	"lemon/global"
-	systemReq "lemon/model/system/request"
 	"net"
 
 	"github.com/gin-gonic/gin"

@@ -5,7 +5,6 @@ import (
 
 	"lemon/global"
 	"lemon/initialize"
-	"lemon/service/system"
 
 	"go.uber.org/zap"
 )
@@ -27,7 +26,7 @@ func RunWindowsServer() {
 	}
 	// 从db加载jwt数据
 	if global.GVA_DB != nil {
-		system.LoadAll()
+		// system.LoadAll()
 	}
 
 	Router := initialize.Routers()
