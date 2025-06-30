@@ -15,10 +15,10 @@ mysql:
     prefix: ""
     port: "3306"
     config: charset=utf8mb4&parseTime=True&loc=Local
-    db-name: db
+    db-name: user_service
     username: root
-    password: "1234"
-    path: 127.0.0.1
+    password: "okni@123456"
+    path: 192.168.2.84
     engine: ""
     log-mode: info
     max-idle-conns: 10
